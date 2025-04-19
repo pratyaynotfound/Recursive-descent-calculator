@@ -1,0 +1,4 @@
+// Syntactically correct program
+{
+: print 2.0*10.5/3.7+11.2
+}

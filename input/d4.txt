@@ -1,0 +1,7 @@
+// Syntactically correct program
+{
+    zah a0
+    :
+    input a0
+    print a0
+}

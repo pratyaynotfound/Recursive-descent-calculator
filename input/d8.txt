@@ -1,0 +1,10 @@
+// Syntactically correct program
+{
+flt a0
+zah b0
+:
+input a0
+input b0
+b0 = 3*a0 - b0/2
+print b0
+}
