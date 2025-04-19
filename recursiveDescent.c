@@ -221,7 +221,6 @@ int E(valType *svP)
 
 int AC()
 {
-    // printf("Inside AC.\n"); //debug
     if (token != ID)
     {
         return 1;
@@ -297,16 +296,12 @@ int PC()
 
 int C()
 {
-    // printf("Inside C (before PC).\n"); //debug
     if (token == PRINT)
         return PC();
-    // printf("Inside C (before RC).\n"); //debug
     if (token == INPUT)
         return RC();
-    // printf("Inside C (after RC).\n"); //debug
     if (token == ID)
         return AC();
-    // printf("Inside C (after AC).\n"); //debug
     printf("C() error: Unexpected token %d at line %d\n", token, line_no);
     return 1;
 }
@@ -315,10 +310,8 @@ int CL()
 {
     while (token != '}' && token != 0)
     {
-        // printf("Inside while before C.\n"); //debug
         if (C())
             return 1;
-        // printf("Inside while after C.\n"); //debug
     }
     return 0;
 }
